@@ -21,7 +21,7 @@ gulp.task('webpack', function () {
 
 gulp.task('watch', function() {
     gulp.watch(
-        ['./src/**/*.js', './test/**/*.js'],
+        ['./src/**/*.*', './test/**/*.*'],
         ['default']
     )
 })

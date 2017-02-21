@@ -9,6 +9,10 @@ var config = {
               presets: ['es2015']
             }
           }]
+        },
+        {
+          test: /\.glsl$/,
+          use: 'raw-loader'
         }
       ]
     }
