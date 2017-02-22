@@ -19,7 +19,7 @@ gulp.task('webpack', function () {
         .pipe(gulp.dest('dist/'))
 });
 
-gulp.task('watch', function() {
+gulp.task('watcher', function() {
     gulp.watch(
         ['./src/**/*.*', './test/**/*.*'],
         ['default']
@@ -27,3 +27,5 @@ gulp.task('watch', function() {
 })
 
 gulp.task('default', [ 'clean', 'webpack' ]);
+
+gulp.task('watch', ['default', 'watcher'])
